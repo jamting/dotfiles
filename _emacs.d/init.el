@@ -171,6 +171,18 @@
   :config
   (powerline-default-theme)
   (setq powerline-default-separator 'utf-8))
+
+;; Graphical (auto-)completion
+(use-package company 
+  :ensure t
+  :init (global-company-mode)
+  :config
+  (setq company-tooltip-align-annotations t
+        company-tooltip-flip-when-above t
+        ;; Easy navigation to candidates with M-<n>
+        company-show-numbers t)
+  :diminish company-mode)
+
 ;; Org-mode hotkeys
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
