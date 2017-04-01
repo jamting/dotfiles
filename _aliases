@@ -98,7 +98,7 @@ jscbin="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources
 unset jscbin;
 
 # Trim new lines and copy to clipboard
-alias c="tr -d '\n' | pbcopy"
+alias cc="tr -d '\n' | pbcopy"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
@@ -185,7 +185,7 @@ alias vhalt="vagrant halt"
 
 # Colored up cat!
 # You must install Pygments first - "sudo easy_install Pygments"
-alias c='pygmentize -O style=monokai -f console256 -g'
+alias cot='pygmentize -O style=monokai -f console256 -g'
 
 # Git 
 # You must install Git first - ""
