@@ -2,7 +2,7 @@
 
 # Make emacs the default editor.
 export EDITOR="emacsclient"
-export ALTERNATE_EDITOR="emacs"
+export ALTERNATE_EDITOR=""
 
 # Enable persistent REPL history for `node`.
 export NODE_REPL_HISTORY=~/.node_history;
