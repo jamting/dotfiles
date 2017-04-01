@@ -175,3 +175,6 @@ alias finder='open -a Finder ./'
 # Open specified files in Sublime Text
 # "s ." will open the current directory in Sublime
 alias s='open -a "Sublime Text"'
+
+# Shortcuts for open
+alias o="open"
