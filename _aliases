@@ -181,3 +181,6 @@ alias o="open"
 
 # Open current dir in default application
 alias oo="open ."
+
+# I manage my dotfiles with this script
+alias dfm="python ~/Repos/forks/dotfilemanager/dotfilemanager/dotfilemanager.py"
