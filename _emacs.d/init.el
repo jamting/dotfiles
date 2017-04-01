@@ -461,7 +461,7 @@
  '(fci-rule-color "#d6d6d6")
  '(package-selected-packages
    (quote
-    (org org-plus-contrib smex ivy swiper counsel flx borland-blue-theme color-theme-sanityinc-tomorrow projectile counsel-projectile)))
+    (company powerline nyan-mode undo-tree org org-plus-contrib smex ivy swiper counsel flx borland-blue-theme color-theme-sanityinc-tomorrow projectile counsel-projectile)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
