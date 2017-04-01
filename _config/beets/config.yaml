@@ -1,0 +1,64 @@
+import:
+    move: yes
+    write: yes
+    log: ~/.config/beets/log.txt
+    original_date: yes
+    
+per_disc_numbering: yes
+
+replace:
+    '[\\/]': _
+    '^\.': _
+    '[\x00-\x1f]': _
+    '[<>\?\*\|]': _
+    ':': ' -'
+    '\.$': _
+    '\s+$': ''
+    '^\s+': ''
+    
+ignore: .AppleDouble ._* *~ .DS_Store
+
+asciify_paths: yes
+
+ui:
+  color: yes
+  
+library: ~/Music/Beets.blb
+
+directory: ~/Music/
+
+# plugins:   lyrics lastgenre web missing fromfilename 
+plugins: fetchart embedart mbcollection discogs importfeeds inline
+
+#original_date: yes
+#lastgenre:
+#    fallback: ''
+#    canonical: ''
+
+paths:
+    default: Albums/$albumartist/$albumname ($year $country$raremedia) %aunique{albumartist year album}/%if{$multidisc,$discno}%if{$hasdisctitle, - $disctitle}/$trackno - $artist - $title
+    
+    singleton: Singletons/$artist - $title
+    
+    albumtype:soundtrack: Soundtracks/$albumname ($albumartist $original_year)%aunique{}/%if{$multidisc,$discno}%if{$hasdisctitle, - $disctitle}/$trackno - $artist - $title
+    
+    comp: Compilations/$albumartist/$album ($original_year)%aunique{albumartist original_year album} %if{$multidisc,CD$disc ($disctotal)}%if{$hasdisctitle, - $disctitle}/%if{$multidisc,$disc-}$track $artist - $title
+    
+#paths:
+#    default: $albumartist/$original_year - $album%aunique{}/%if{$multidisc,$disc-}$track $title
+#    default: $genre/$albumartist/$album/$track $artist - $title ($bpm BPM)
+#    singleton: Singletons/$artist - $title ($bpm BPM)
+#    comp: $genre/$album/$track $artist - $title ($bpm BPM)
+#    albumtype:soundtrack: Soundtracks/$album/$track $artist - $title ($bpm BPM)
+    
+item_fields:
+    raremedia: u' %s' % (media) if media != 'CD' > 0 else u''
+    multidisc: 1 if disctotal > 1 else 0
+    hasdisctitle: 1 if len(disctitle) > 0 else 0
+    albumname: u'%s - %s' % (album,albumdisambig) if len(albumdisambig) > 0 else u'%s' % (album) 
+    discno:  u'Disc %02i of %02i' % (disc, disctotal) if disctotal > 1 else u''
+    trackno: u'%02i.%02i' % (disc, track) if disctotal > 1 else u'%02i' % (track)
+
+importfeeds:    
+    formats: link   
+    dir: ~/Music/@Import

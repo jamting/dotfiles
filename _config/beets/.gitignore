@@ -1,0 +1,6 @@
+# ignore stuff
+
+discogs_token.json
+log.txt
+library.db
+state.pickle
