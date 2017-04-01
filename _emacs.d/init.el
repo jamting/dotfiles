@@ -144,6 +144,21 @@
 ;; Mode for beancounting
 (require 'beancount)
 
+;; undo tree
+(use-package undo-tree
+  :ensure t
+  :diminish undo-tree-mode
+  :init
+  (global-undo-tree-mode)
+  :config
+  (progn
+    (setq undo-tree-visualizer-timestamps t)
+    (setq undo-tree-visualizer-diff t)
+    (setq undo-tree-auto-save-history t))
+  :bind (("C-x C-u" . undo-tree-visualize)
+	 ("C-z" . undo-tree-visualize)
+	 ("s-z" . undo-tree-undo)
+	 ("s-Z" . undo-tree-redo)))
 ;; Org-mode hotkeys
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
