@@ -28,7 +28,8 @@ library: ~/Music/Beets.blb
 directory: ~/Music/
 
 # plugins:   lyrics lastgenre web missing fromfilename 
-plugins: fetchart embedart mbcollection discogs importfeeds inline
+plugins: fetchart embedart discogs importfeeds inline
+
 
 #original_date: yes
 #lastgenre:
