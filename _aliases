@@ -161,3 +161,7 @@ alias reload="exec $SHELL -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Open cwd in Finder
+# http://brettterpstra.com/2013/02/09/quick-tip-jumping-to-the-finder-location-in-terminal/
+alias finder='open -a Finder ./'
