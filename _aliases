@@ -172,12 +172,6 @@ alias path='echo -e ${PATH//:/\\n}'
 # http://brettterpstra.com/2013/02/09/quick-tip-jumping-to-the-finder-location-in-terminal/
 alias finder='open -a Finder ./'
 
-# Shortcuts for open
-alias o="open"
-
-# Open current dir in default application
-alias oo="open ."
-
 # I manage my dotfiles with this script
 alias dfm="python ~/Repos/forks/dotfilemanager/dotfilemanager/dotfilemanager.py"
 
