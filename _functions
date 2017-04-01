@@ -191,9 +191,9 @@ function getcertnames() {
 # opens the given location
 function s() {
 	if [ $# -eq 0 ]; then
-		subl .;
+		open -a "Sublime Text" .;
 	else
-		subl "$@";
+		open -a "Sublime Text" "$@";
 	fi;
 }
 
