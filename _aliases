@@ -16,6 +16,7 @@ alias cdr="cd ~/Repos"
 alias cdf="cd ~/Repos/forks"
 alias cdg="cd ~/Repos/github"
 alias cdp="cd ~/Repos/private"
+alias cdo="cd ~/Repos/others"
 alias cdd="cd ~/Downloads"
 alias cdt="cd ~/Desktop"
 
