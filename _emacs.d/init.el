@@ -165,6 +165,12 @@
   :ensure t
   :config
   (nyan-mode))
+
+(use-package powerline
+  :ensure t
+  :config
+  (powerline-default-theme)
+  (setq powerline-default-separator 'utf-8))
 ;; Org-mode hotkeys
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
