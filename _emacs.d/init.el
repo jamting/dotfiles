@@ -114,6 +114,7 @@
 ;; Word wrap at word
 (setq-default word-wrap t)
 
+;;(global-linum-mode 1)
 ;; Recent files
 (require 'recentf)
 (recentf-mode 1)
