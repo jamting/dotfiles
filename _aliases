@@ -178,3 +178,6 @@ alias s='open -a "Sublime Text"'
 
 # Shortcuts for open
 alias o="open"
+
+# Open current dir in default application
+alias oo="open ."
