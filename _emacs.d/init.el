@@ -86,6 +86,7 @@
 ;; Turn off annoyances
 
 (tool-bar-mode -1)
+(scroll-bar-mode -1)
 (setq ring-bell-function 'ignore)
 
 ;; Don't display the 'Welcome to GNU Emacs' buffer on startup
