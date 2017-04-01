@@ -192,3 +192,7 @@ alias brewupdate="brew update ; brew upgrade ; brew cleanup"
 alias vup="vagrant up"
 alias vssh="vagrant ssh"
 alias vhalt="vagrant halt"
+
+# Colored up cat!
+# You must install Pygments first - "sudo easy_install Pygments"
+alias c='pygmentize -O style=monokai -f console256 -g'
