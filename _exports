@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+# -*- bash -*-
 
 # Make emacs the default editor.
 export EDITOR="emacsclient"

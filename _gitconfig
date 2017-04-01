@@ -1,4 +1,4 @@
-# -*- INI -*-
+# -*- ini -*-
 
 [core]
 	# Use custom `.gitignore`

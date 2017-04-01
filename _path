@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+# -*- bash -*-
 
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
