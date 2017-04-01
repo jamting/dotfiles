@@ -12,10 +12,13 @@ alias -- -="cd -"
 alias dir="ls"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias cdr="cd ~/Repos"
+alias cdf="cd ~/Repos/forks"
+alias cdg="cd ~/Repos/github"
+alias cdp="cd ~/Repos/private"
+alias cdd="cd ~/Downloads"
+alias cdt="cd ~/Desktop"
+
 alias g="git"
 alias h="history"
 alias j="jobs"
