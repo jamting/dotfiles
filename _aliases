@@ -187,3 +187,8 @@ alias dfm="python ~/Repos/forks/dotfilemanager/dotfilemanager/dotfilemanager.py"
 
 # Update brew only
 alias brewupdate="brew update ; brew upgrade ; brew cleanup"
+
+# Vagrant
+alias vup="vagrant up"
+alias vssh="vagrant ssh"
+alias vhalt="vagrant halt"
