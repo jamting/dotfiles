@@ -159,6 +159,12 @@
 	 ("C-z" . undo-tree-visualize)
 	 ("s-z" . undo-tree-undo)
 	 ("s-Z" . undo-tree-redo)))
+
+(use-package nyan-mode
+  :if window-system
+  :ensure t
+  :config
+  (nyan-mode))
 ;; Org-mode hotkeys
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
