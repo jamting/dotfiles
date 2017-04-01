@@ -234,3 +234,6 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# Virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh
