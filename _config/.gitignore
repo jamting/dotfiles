@@ -1,0 +1,13 @@
+# Some ignore folders i don't care about
+
+.mono/
+JetBrains/
+configstore/
+gtk-2.0/
+mps-youtube/
+mpv/
+MusicBrainz/
+NuGet/
+stetic/
+xbuild/
+yarn/
